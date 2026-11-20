@@ -30,7 +30,7 @@ https://sunny-beat.github.io/digital-electronics-review-notes/
 
 ## 本地查看
 
-双击 `index.html`。
+双击 `index.html` —— **全部八章内容已合并在这一个文件中**，图片全部内嵌，无需任何其他文件，可单独拷贝分享。
 
 ## 说明
 
