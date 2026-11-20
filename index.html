@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>数字电子技术基础 · 期末复习指导书</title>
+<style>
+  :root{
+    --paper:#f5f3ed; --white:#fffefb; --ink:#202a30; --secondary:#52615e;
+    --rule:#dedfd5; --green:#07594b; --light:#eaf3ee; --rose:#87372d; --quote:#fbf1ea;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;background:var(--paper);color:var(--ink);
+    font-family:"Songti SC","Source Han Serif SC","Microsoft YaHei",Georgia,serif;
+    line-height:1.75;
+  }
+  .wrap{max-width:960px;margin:0 auto;padding:64px 24px 90px}
+
+  /* 头部 */
+  .hero{border-bottom:2px solid var(--ink);padding-bottom:28px;margin-bottom:14px}
+  .kicker{
+    display:inline-block;font-size:12px;letter-spacing:.2em;color:var(--green);
+    border:1px solid var(--green);padding:3px 12px;border-radius:2px;margin-bottom:20px;
+    font-family:"Microsoft YaHei",sans-serif;
+  }
+  h1{
+    margin:0 0 12px;font-size:40px;line-height:1.25;letter-spacing:1px;font-weight:700;
+  }
+  h1 .sub{display:block;font-size:18px;color:var(--secondary);font-weight:400;margin-top:10px;letter-spacing:0}
+  .meta{margin-top:18px;font-size:13.5px;color:var(--secondary);font-family:"Microsoft YaHei",sans-serif}
+  .meta span{margin-right:18px;white-space:nowrap}
+
+  /* 章节卡片 */
+  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:36px}
+  .ch{
+    display:block;text-decoration:none;color:inherit;background:var(--white);
+    border:1px solid var(--rule);border-radius:4px;padding:22px 24px;
+    transition:.18s ease;position:relative;overflow:hidden;
+  }
+  .ch::before{
+    content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--green);opacity:0;transition:.18s;
+  }
+  .ch:hover{border-color:var(--green);transform:translateY(-2px);box-shadow:0 6px 20px rgba(32,42,48,.08)}
+  .ch:hover::before{opacity:1}
+  .ch .num{
+    font-size:12px;letter-spacing:.16em;color:var(--rose);font-family:"Microsoft YaHei",sans-serif;
+    display:block;margin-bottom:8px;
+  }
+  .ch h3{margin:0 0 8px;font-size:20px;letter-spacing:.5px}
+  .ch p{margin:0;font-size:13.5px;color:var(--secondary);font-family:"Microsoft YaHei",sans-serif;line-height:1.65}
+
+  /* 说明区 */
+  .note{
+    margin-top:48px;background:var(--quote);border-left:3px solid var(--rose);
+    padding:18px 22px;font-size:13.5px;color:#5a3a35;font-family:"Microsoft YaHei",sans-serif;
+  }
+  .note b{color:var(--rose)}
+  footer{
+    margin-top:40px;padding-top:20px;border-top:1px solid var(--rule);
+    font-size:12.5px;color:var(--secondary);font-family:"Microsoft YaHei",sans-serif;
+  }
+  @media(max-width:720px){
+    .wrap{padding:40px 18px 60px}
+    h1{font-size:28px}
+    h1 .sub{font-size:15px}
+    .grid{grid-template-columns:1fr;gap:12px}
+    .ch{padding:18px 20px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="hero">
+    <span class="kicker">期末复习指导书</span>
+    <h1>数字电子技术基础
+      <span class="sub">按教材小节整理的考点提纲与背记要点</span>
+    </h1>
+    <div class="meta">
+      <span>阎石 主编 · 第六版</span>
+      <span>共 8 章</span>
+      <span>依据华南理工大学电力学院课件整理</span>
+    </div>
+  </div>
+
+  <div class="grid">
+    <a class="ch" href="数字电子技术基础_第1章_数制和码制.html">
+      <span class="num">CHAPTER 01</span>
+      <h3>数制和码制</h3>
+      <p>常用数制与互换、二进制算术运算与补码、常用编码</p>
+    </a>
+    <a class="ch" href="数字电子技术基础_第2章_逻辑代数基础.html">
+      <span class="num">CHAPTER 02</span>
+      <h3>逻辑代数基础</h3>
+      <p>三种基本运算、基本公式与定理、卡诺图化简与无关项</p>
+    </a>
+    <a class="ch" href="数字电子技术基础_第3章_门电路.html">
+      <span class="num">CHAPTER 03</span>
+      <h3>门电路</h3>
+      <p>二极管门、CMOS 与 TTL 电路结构、静态动态特性与接口</p>
+    </a>
+    <a class="ch" href="数字电子技术基础_第4章_组合逻辑电路.html">
+      <span class="num">CHAPTER 04</span>
+      <h3>组合逻辑电路</h3>
+      <p>分析与设计方法、常用组合模块、竞争冒险的判断与消除</p>
+    </a>
+    <a class="ch" href="数字电子技术基础_第5章_半导体存储电路.html">
+      <span class="num">CHAPTER 05</span>
+      <h3>半导体存储电路</h3>
+      <p>SR 锁存器、各类触发器、寄存器与存储器容量扩展</p>
+    </a>
+    <a class="ch" href="数字电子技术基础_第6章_时序逻辑电路.html">
+      <span class="num">CHAPTER 06</span>
+      <h3>时序逻辑电路</h3>
+      <p>状态方程分析、常用时序电路、设计方法与自启动判断</p>
+    </a>
+    <a class="ch" href="数字电子技术基础_第7章_脉冲波形的产生和整形电路.html">
+      <span class="num">CHAPTER 07</span>
+      <h3>脉冲波形的产生和整形</h3>
+      <p>施密特触发器、单稳态、多谐振荡器与 555 定时器</p>
+    </a>
+    <a class="ch" href="数字电子技术基础_第8章_数模和模数转换.html">
+      <span class="num">CHAPTER 08</span>
+      <h3>数模和模数转换</h3>
+      <p>D/A 与 A/D 转换原理、主要类型对比与性能指标</p>
+    </a>
+  </div>
+
+  <div class="note">
+    <b>使用说明</b>　每章正文中标注教材页码，可对照课本翻查；文中图表点击可放大查看。本资料为个人复习整理，
+    依据课堂课件与教材编写，仅供学习参考，请以课堂讲授与教材原文为准。
+  </div>
+
+  <footer>
+    数字电子技术基础 · 期末复习指导书　|　阎石主编《数字电子技术基础》第六版　|　个人整理，非官方出版物
+  </footer>
+
+</div>
+</body>
+</html>
